@@ -1,0 +1,7 @@
+<h1
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: randomNumber == 1 }"
+>
+  My god . Your lucky number is {{ randomNumber }},{{ "luck " }}
+</h1>
+<p *ngFor="let a of arr">{{ a }}</p>

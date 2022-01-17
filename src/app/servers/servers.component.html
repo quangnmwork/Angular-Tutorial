@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="someText" />
+<button [disabled]="show" (click)="buttonEvent()">Click</button>
+<h2>{{ someText }}</h2>
+<h3 *ngIf="someText == 'hello'; else err">you got me</h3>
+<ng-template #err><h2 class="text-danger">oh</h2></ng-template>
